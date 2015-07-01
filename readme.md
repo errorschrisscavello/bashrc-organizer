@@ -1,8 +1,10 @@
-# Unix Bash Shell helper files
+# Bashrc Organizer
 
 This is an extendable little suite of files meant to provide short helper commands, git prompt formatting, and a place to organize your shell environment set up.
 
 There are Mac specific commands in a few files, however the bulk of these files are good for any Bash Shell environment.
+
+Download it, fork it, extend it, bend it to your will. This is a great starting place to keep your favorite Bash commands and helpers accessible and installable on any machine. This way you never have to remember how you had your Unix environment set up.
 
 ***
 
