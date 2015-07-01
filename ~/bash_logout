@@ -1,0 +1,7 @@
+#========================================================
+# Say Goodbye
+#========================================================
+
+# Put any commands you want to execute on logout here
+
+echo "Goobye $(whoami)"
