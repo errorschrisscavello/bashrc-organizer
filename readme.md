@@ -10,19 +10,33 @@ Download it, fork it, extend it, bend it to your will. This is a great starting 
 
 ## Installation:
 
+### If you already have an existing `.bashrc`, `.bash_profile` make a copy before proceeding!
+
+### Easy Install (Recommended)
+
+1. Change directory to the root folder of Bashrc Organizer: `cd path/to/bashrc/organizer`
+
+1. Run the installation script: `bash INSTALL`
+
+	a. NOTE!!! if you already have any of the files located in the included `bash/~` folder in your own `~` directory you should append the contents of the file in `bash/~` to it. This next step will overwrite those files if they already exist
+
+### Manual Install (If you already have in use a `.bashrc`, `.bash_profile` etc..)
+
 1. Download the `bash` directory and move it to your home directory with the command `$ mv path/to/bash ~/bash`
 
 1. Now move each of the files in the `bash/~` folder to your `~` folder
 
-	a. NOTE!!! if you already have any of the files located in the included `bash/~` folder in your own `~` directory you should append the contents of the file in `bash/~` to it. The next step will overwrite those files if they already exist
-
 1. Now rename those files to be prefixed with a dot. Example: `mv bashrc .bashrc`
+
+	a. NOTE!!! if you already have any of the files located in the included `bash/~` folder in your own `~` directory you should append the contents of the file in `bash/~` to it. This next step will overwrite those files if they already exist
 
 1. After all of the files in the `bash/~` folder are moved that directory may be deleted: `rm ~/bash/~`
 
 1. Now rename the `bash` folder to `.bash`
 
-1. Once these steps are complete you may open a new terminal window or `source ~/.bashrc`. You should see: `Hello $YOUR_USER_NAME_HERE$`
+### Success:
+
+Once these steps are complete you may open a new terminal window or `source ~/.bashrc`. You should see: `Hello $YOUR_USER_NAME_HERE$`
 
 ***
 
@@ -36,7 +50,7 @@ A place to organize all of your command aliases.
 
 #### env.sh
 
-Environment specific settings and commands.
+Environment specific settings and commands, Homebrew settings, rbenv, pyenv, etc..
 
 #### functions.sh
 
