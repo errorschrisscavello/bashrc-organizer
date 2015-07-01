@@ -1,0 +1,31 @@
+# ----------------------------
+# Uninstallation file
+# ----------------------------
+
+H='~'
+O=$PWD
+
+cd $H
+
+for FILE in \.bash*
+do
+	if [ ! -d "$FILE" ]; then
+		BASENAME=$(basename $FILE)
+		BASENAME=${BASENAME:1}
+		mv $FILE $O\/\~\/$BASENAME
+		echo $O\/\~\/$BASENAME
+	fi
+done
+
+cd \.bash
+
+for FILE in *\.sh
+do
+	if [ -e "$FILE" ]; then
+		BASENAME=$(basename $FILE)
+		mv $FILE $O\/$BASENAME
+		echo $O\/$BASENAME
+	fi
+done
+
+cd $O

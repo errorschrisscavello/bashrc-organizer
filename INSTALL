@@ -1,0 +1,28 @@
+# ----------------------------
+# Installation file
+# ----------------------------
+
+H='~'
+
+cd $PWD/~
+
+for FILE in bash*
+do
+	BASENAME=$(basename $FILE)
+	mv $FILE $H\/\.$BASENAME
+	# echo $H\/\.$BASENAME
+done
+
+cd $H
+mkdir '.bash'
+# echo '.bash'
+
+cd $OLDPWD
+cd ..
+
+for FILE in *\.sh
+do
+	BASENAME=$(basename $FILE)
+	mv $FILE $H\/\.bash\/$BASENAME
+	# echo $H\/\.bash\/$BASENAME
+done
